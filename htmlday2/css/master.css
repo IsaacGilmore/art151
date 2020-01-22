@@ -1,0 +1,21 @@
+.my-div {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  background: black;
+  color: lightblue;
+  padding-left: 2em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 80%;
+  font-size: 15pt;
+  border-radius: 10px;
+}
+
+a:hover {
+  color: red;
+}
+
+iframe {
+  margin-bottom: 50em;
+}
