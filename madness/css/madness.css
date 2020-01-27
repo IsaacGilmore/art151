@@ -1,0 +1,169 @@
+@font-face {
+  font-family: Cyberdyne;
+  src: url(cyberdyne/cyberdyne.ttf) format('truetype');
+}
+
+html {
+  padding: 0px;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+h1 {
+  font-family: Cyberdyne;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 10px;
+  font-size: 50pt;
+}
+
+#mainContainer {
+  width: 100%;
+  height: auto;
+  background-image: url("../images/pippin.png");
+  background-repeat: repeat;
+  background-color: lightcoral;
+  background-size: 5%;
+  position: relative;
+}
+
+#contentContainer {
+  position: relative;
+  width: 600px;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: lightblue;
+}
+
+.row {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.inlineGreen {
+  position: relative;
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: lightgreen;
+  border: 5px;
+}
+
+.inlineYellow {
+  position: relative;
+  display: -webkit-flex;
+  /* Safari */
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: lightyellow;
+  border: 5px;
+}
+
+.relativePos {
+  width: 80px;
+  height: 80px;
+  left: 30px;
+  top: 10px;
+  position: relative;
+  background-color: orange;
+}
+
+.relativePos2 {
+  width: 60px;
+  height: 60px;
+  left: 30px;
+  top: 50px;
+  position: relative;
+  background-color: orange;
+}
+
+.fixedPos {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+.absPos {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 80px;
+  height: 80px;
+  background-color: orange;
+}
+
+.pippin {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.cat-gif {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.gradient-square {
+  width: 200px;
+  height: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 200px;
+  animation-name: gradient;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+
+@keyframes gradient {
+  0% {
+    background: -webkit-linear-gradient(red, yellow);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow);
+    /* Standard syntax */
+    left: 0%;
+  }
+  50% {
+    background: -webkit-linear-gradient(yellow, blue);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(yellow, blue);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(yellow, blue);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(yellow, blue);
+    /* Standard syntax */
+    left: calc(100% - 200px);
+  }
+  100% {
+    background: -webkit-linear-gradient(red, yellow);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(red, yellow);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(red, yellow);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(red, yellow);
+    /* Standard syntax */
+    left: 0px;
+  }
+}
