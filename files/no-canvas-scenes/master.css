@@ -1,0 +1,23 @@
+body {
+  background-color: black;
+}
+
+.myDiv {
+  color: white;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#myInput {
+  display: none;
+  margin: 0 auto;
+
+}
+
+#myParagraph {
+  color: white;
+  display: none;
+  width: 180px;
+  margin: 5px auto;
+}
