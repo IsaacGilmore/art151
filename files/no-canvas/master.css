@@ -1,0 +1,14 @@
+body {
+  background-color: lightgray;
+}
+
+.myDiv {
+  color: green;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#myHiddenDiv {
+  display: none;
+}
