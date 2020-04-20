@@ -1,0 +1,27 @@
+.buttonGroup {
+  margin-top: 40px;
+}
+
+.gender {
+  margin-bottom: 40px;
+}
+
+
+
+#red {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+
+#blue {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+}
+
+#green {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
